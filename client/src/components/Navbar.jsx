@@ -27,6 +27,7 @@ export default function Navbar() {
           >
             Reports
           </Link>
+          
         </div>
       </div>
     </nav>

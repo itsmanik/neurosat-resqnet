@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Upload from './pages/Upload';
 import Reports from './pages/Reports';
+import Process from './pages/Process';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/upload" element={<Upload />} />
           <Route path="/reports" element={<Reports />} />
+          <Route path='/process' element={<Process />} />
         </Routes>
       </main>
     </div>

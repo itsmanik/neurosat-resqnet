@@ -1,15 +1,16 @@
 // src/components/Header.js
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FiGrid, FiUpload, FiBarChart2 } from 'react-icons/fi';
+import { FiGrid, FiUpload, FiBarChart2, FiLoader, FiActivity } from 'react-icons/fi';
 
 // No longer needs activeTab or setActiveTab props
 const Header = () => {
   // Define nav items with their corresponding paths
   const navItems = [
     { path: '/', label: 'Home', icon: <FiGrid className="mr-2" /> },
+    { path: '/process', label: 'Process', icon: <FiActivity className="mr-2" /> },
     { path: '/upload', label: 'Upload', icon: <FiUpload className="mr-2" /> },
-    { path: '/reports', label: 'Reports', icon: <FiBarChart2 className="mr-2" /> }
+    { path: '/reports', label: 'Reports', icon: <FiBarChart2 className="mr-2" /> },
   ];
 
   // This function determines the styles for the link based on whether it's active
